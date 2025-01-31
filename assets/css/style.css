@@ -1,0 +1,94 @@
+/* General Styles */
+@font-face {
+    font-family: 'Eurostile';
+    src: url('../fonts/Eurostile-Font/Eurostile.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Eurostile', sans-serif;
+    color: white;
+    height: 100vh; /* Ensure the gradient fills the viewport */
+    background: linear-gradient(45deg, #000000, #434343, #000000);
+    background-size: 300% 300%; /* Make the gradient larger for smooth animation */
+    animation: gradientAnimation 8s ease infinite; /* Apply animation */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navbar Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hide Navbar */
+header.hidden {
+    transform: translateY(-100%); /* Move navbar out of view */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    font-family: 'Eurostile', Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #60baf2; /* Highlight color */
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 20px; /* Adjust for fixed navbar */
+    text-align: center;
+}
+
+#homepage {
+    background-color: rgba(0, 0, 0, 0.5); /* Example styling */
+    color: white;
+    font-size: 50px;
+    font-family: 'Eurostile', sans-serif;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#about-us,
+#technology,
+#help-us {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}

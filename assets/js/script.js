@@ -10,6 +10,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 let lastScrollPosition = 0;
 const navbar = document.querySelector('header');
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+        window.history.replaceState(null, null, ' ');
+    }
+});
 
 window.addEventListener('scroll', () => {
     const currentScrollPosition = window.pageYOffset;

@@ -83,12 +83,91 @@ header.hidden {
 }
 
 #about-us,
-#technology,
-#help-us {
+#use-case {
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
+}
+
+#solution,
+#contact-us {
+    background-color: rgba(128, 128, 128, 0.1); /* Semi-transparent overlay */
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
+
+
+html {
+    font-size: 2vw; /* Base size scales with viewport */
+}
+h1 {
+    text-align: left;
+    font-size: 2rem; /* 2 times the base size */
+}
+h2 {
+    font-size: 1.5rem; /* 2 times the base size */
+}
+img {
+    width: 50vw; /* Example width */
+    height: auto;
+    margin-bottom: 10px; /* Adjust spacing below image */
+}
+
+#bio-list {
+    width: 80vw; /* Example width */
+    height: auto;
+    margin-bottom: 10px; /* Adjust spacing below image */
+}
+p {
+    font-size: 1.0rem;
+}
+p2 {
+    font-size: 15px; 
+}
+video {
+    max-width: 30%;
+    max-height: 800px;
+}
+.video-container {
+    display: flex;
+    gap: 20px; /* Spacing between videos */
+    flex-wrap: wrap; /* Makes the layout responsive */
+    justify-content: center; /* Centers the videos */
+}
+
+/* form {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+    padding: ;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input, textarea {
+    width: 40vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+} */

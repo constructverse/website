@@ -10,10 +10,12 @@
     <!-- Header Section -->
     <header>
         <nav class="navbar">
+            <div class="nav-logo">
+                <img src="assets/images/logo_star.png" alt="constructverse logo" class="nav-logo-img">
+            </div>
             <ul>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#solution">Solution</a></li>
-                <li><a href="#use-case">Use Case</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
@@ -23,34 +25,31 @@
     <main>
         <section id="homepage" class="section">
             <!-- <h1>constructverse</h1> -->
-            <image src="assets/images/logo.png" alt="constructverse logo">
+            <div class="logo-container">
+                <img src="assets/images/logo_star.png" alt="constructverse logo" class="logo">
+                <h1 class="company-name">constructverse</h1>
+            </div>
             <h2>From Data to Decisions: AI for Modern Construction</h2>
-            <p>Constructverse is an AI-agent and Data Engine platform tailored for the construction industry,<br>helping to retrieve project specific data such as schedule, automating progress and schedule updates. 
+            <p>Constructverse is an AI-agent and Data Engine platform tailored for the construction industry, helping to retrieve project specific data such as schedule, automating progress and schedule updates. 
             </p>
         </section>
         <!-- About Us Section -->
         <section id="about-us" class="section">
             <h1>About Us</h1>
             <h2>Our Vision</h2>
-            <p>We bridge the gap between construction industry and AI from massive data collected daily, but all siloed data</p>
+            <p>To bridge the gap between construction and AI,  <br>and turn the massive amounts of siloed data collected daily to actionable data</p>
             <h2>Meet the Team</h2>
             <image id="bio-list" src="assets/images/who-we-are.png" alt="constructverse logo">
-            <p>We are a forward-thinking company dedicated to innovation and excellence.</p>
         </section>
 
         <!-- Solution Section -->
         <section id="solution" class="section">
             <h1>Solution</h1>
-            <h2>Acitvely update project schedule</h2>
+            <h2>Actively update project schedule</h2>
             <p>Turn daily logs to actionable data with zero learning curve with our augmented LLM agent</p>
             <p>Get progress upadtes based on summarized data from members in project teams</p>
             <p>Re-align your schedule every day, rather than weeks
             </p>
-        </section>
-
-        <!-- Use case Section -->
-        <section id="use-case" class="section">
-            <h1>Use case</h1>
             <h2>Just talk to start logging!</h2>
             <div class="video-container">
                 <video src="assets/videos/demo1.mov" autoplay loop muted playsinline></video>
@@ -62,18 +61,15 @@
         <!-- Contact Us Section -->
         <section id="contact-us" class="section">
             <h1>Contact Us</h1>
-            <p>Have a question or want to start a conversation?<br>Our team is here to help. Reach out to us, and we’ll get back to you as soon as possible</p>
-            <!-- <form action="your-server-endpoint" method="POST">             
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Your name">            
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Your email">            
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject (optional)">            
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required placeholder="Your message" rows="4"></textarea>            
-                <button type="submit">Send Message</button>
-            </form> -->
+            <p>Have a question or want to start a conversation?<br>Our team is here to help. Reach out to us, and we'll get back to you as soon as possible</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/constructverse" target="_blank" class="linkedin-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="linkedin-logo">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span>Follow us on LinkedIn</span>
+                </a>
+            </div>
         </section>
     </main>
     

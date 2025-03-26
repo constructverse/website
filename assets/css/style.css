@@ -195,7 +195,11 @@ p2 {
     font-size: 15px; 
 }
 video {
-    max-width: 30%;
+    max-width: 100%;
+    max-height: 800px;
+}
+.intro-video {
+    max-width: 100%;
     max-height: 800px;
 }
 .video-container {
